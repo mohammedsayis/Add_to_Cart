@@ -1,0 +1,42 @@
+.card-top{
+    position: relative;
+    display:flex ;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background: #cad6fd;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: .25rem;
+}
+.item{
+    margin-left: 20px;
+}
+.item a:hover{
+    color: blue;
+}
+.card{
+    margin-left:20px ;
+    margin-top: 20px;
+    padding: 10px;
+}
+.card-img-top{
+    height: 150px;
+    width: 150px;
+}
+.jwellery-img{
+    height: 100px;
+    margin-top: 20px;
+}
+.card-price{
+    font-size: large;
+    font-weight: bold;
+}
+.card img:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.3);
+}
+.card div:hover{
+    transition: 0.3s ease-in-out; 
+    transform: scale(1.1);
+}
