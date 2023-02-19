@@ -36,7 +36,8 @@
                   <h5 class="card-title" style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis ; max-width:100ch">{{item.title}}</h5>
                   <p class="card-price">$ : {{item.price}}</p>
                   <h6>Rating  : <div class="badge bg-success">{{item.rating.rate}}</div> </h6> <br />
-                  <a href="#" id="button" class="btn btn-primary">Add To Cart</a>
+                  <!-- <a href="#" id="button" (click)=addToCart(item) class="btn btn-primary">Add To Cart</a> -->
+                  <button  class="btn btn-primary" (click)="addToCart(item)">Add To Cart</button>
                 </div>
               </div>
 
