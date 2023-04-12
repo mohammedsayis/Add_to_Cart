@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { ApiService } from 'src/app/service/api.service';
 import { CartService } from 'src/app/service/cart.service';
 
@@ -10,7 +11,7 @@ import { CartService } from 'src/app/service/cart.service';
 export class ProductComponent {
 
   public productList : any ;
-  constructor(private api : ApiService , private cartSernice : CartService){}
+  constructor(private api : ApiService , private cartService : CartService , private router:Router){}
   ngOnInit():void {
     this.api.getProduct()
     .subscribe(res=>{
@@ -25,8 +26,9 @@ export class ProductComponent {
 
   addToCart(item:any){
     
-    this.cartSernice.addToCart(item)
+    this.cartService.addToCart(item)
     
   }
+  
 
 }

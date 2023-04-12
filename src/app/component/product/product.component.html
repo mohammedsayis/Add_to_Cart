@@ -28,18 +28,23 @@
 </div>
 
 <div class="container">
-    <div class="row">
+    <div  class="row">
         <ng-container *ngFor="let item of productList">
-            <div class="card " style="width: 12rem;" >
-                <img class="card-img-top"  src="{{item.image}}" alt="Card image cap">
+            <div  class="card " style="width: 12rem;" >
+                <img  class="card-img-top"  src="{{item.image}}" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title" style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis ; max-width:100ch">{{item.title}}</h5>
                   <p class="card-price">$ : {{item.price}}</p>
                   <h6>Rating  : <div class="badge bg-success">{{item.rating.rate}}</div> </h6> <br />
                   <!-- <a href="#" id="button" (click)=addToCart(item) class="btn btn-primary">Add To Cart</a> -->
-                  <button  class="btn btn-primary" (click)="addToCart(item)">Add To Cart</button>
+                 
+                    
+                 
+                 <button id="card-btn" class="btn btn-primary" (click)="addToCart(item)">Add To Cart</button>
+                  
                 </div>
               </div>
+             
 
               <!-- <div class="card col-md-3">
                 <img src="" alt="">
@@ -49,6 +54,7 @@
                 <button class="btn btn-primary">Add To Cart</button>
               </div> -->
         </ng-container>
+        
         
     </div>
 </div>

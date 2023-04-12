@@ -8,12 +8,14 @@ import { CartComponent } from './component/cart/cart.component';
 import { ProductComponent } from './component/product/product.component';
 import { HttpClientModule } from '@angular/common/http';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CartComponent,
-    ProductComponent
+    ProductComponent,
+    
   ],
   imports: [
     BrowserModule,
